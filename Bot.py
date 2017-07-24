@@ -15,15 +15,16 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-def meme():
+async def meme():
     meme_list = os.listdir("./memes")
     rand_numb = random.randint(0, len(meme_list)-1)
-    return meme_list[rand_numb]
+    m = meme_list[rand_numb]
+    await bot.send_file(message.channel,fp="./memes/"+m ,filename=m, content="aah, fresh meme!")
+
 
 @bot.event
 async def on_message(message):
     if message.content.startswith("please meme"):
-        m = meme()
-        await bot.send_file(message.channel,fp="./memes/"+m ,filename=m, content="aah, fresh meme!")
+        meme()
 
 bot.run("MjgxNzgyNDg0ODA1NDg0NTQ0.C9JXrA.VisWCc4R2_6EyrBxnk-Alogc1mU")
