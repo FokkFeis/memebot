@@ -1,6 +1,11 @@
 # MemeBot 3000
 ## Description
 This is a small meme bot for discord, written in python 3.6 using discord.py
+## Available Commands
+*_please meme_*
+*Will generate a random meme from our _meme database_*
+*_please delaware_*
+*Will confirm if you are from delaware or not* 
 ## Dependencies 
 * Discord.py
 ### Installing dependencies
