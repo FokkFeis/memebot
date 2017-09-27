@@ -1,3 +1,0 @@
-This is a small meme bot for discord, written in python 3.6 using discord.py
-As such, it requires discord.py to be installed; to install, simply run isntall deps.bat or deps.sh
-If you get an aiohttp error citing an unclosed client session, simply run resetaio.bat or resetaio.sh depending on your operating system.
